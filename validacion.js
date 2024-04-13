@@ -1,15 +1,11 @@
 
 const formulario = document.getElementById('formulario');
 
-// Agregar un evento de escucha para el envío del formulario
-formulario.addEventListener('submit', function(event) {
-    // Prevenir el envío predeterminado del formulario
+formulario.addEventListener('submit', function(event) {  
     event.preventDefault();
 
-    // Obtener los datos del formulario
     const formData = new FormData(formulario);
-
-    // Realizar una solicitud de envío usando Fetch API
+   
     fetch(formulario.action, {
         method: formulario.method,
         body: formData
