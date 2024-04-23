@@ -193,7 +193,7 @@
 
 
 /*versión movil*/
-@media (min-width: 425px) {
+@media (min-width: 400px) {
 
      .menu__list__item__contato{
         display: flex;
